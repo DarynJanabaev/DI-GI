@@ -2,6 +2,7 @@
 @import "_var";
 
 $top-clr:#2B4074;
+$txt-clr: #4a4a4a;
 
 html{
     box-sizing: border-box;
@@ -9,6 +10,12 @@ html{
 
 *,*::after,*::before{
     box-sizing: inherit;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'roboto', 'dosis','roboto condensed';
 }
 
 .container{
@@ -41,10 +48,7 @@ html{
     }
 }
 
-body{
-    min-width: 320px;
-    overflow-x: hidden;
-}
+//Header 
 
 .header{
     background-color: $top-clr;
@@ -101,6 +105,71 @@ body{
             top: 15px;
             box-shadow: 0 4px 0 0 $top-clr, 0 8px 0 0 $top-clr;
             position: absolute;
+        }
+    }
+}
+
+//section head
+
+.head{
+    background-image: url('../images/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 193px;
+}
+
+.sliders{
+    background: rgba(33, 33, 33, 0.5);
+    &__item{
+        color: #fff;
+        text-align: center;
+        min-height: 193px;
+    }
+    &__title{
+        font-family: 'roboto condensed';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 28px;
+        text-transform: uppercase;
+        padding: 36px 0 28px;
+        max-width: 243px;
+        margin: 0 auto;
+        position: relative;
+        &::after{
+            content:"";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 8px;
+            width: 61px;
+            margin: 0 auto;
+            background-color: $txt-clr;
+            position: absolute;
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        .slick-active{
+            button{
+                background-color: transparent;
+                border: 2px solid #476E4D; 
+            } 
+        }
+        button{
+            font-size: 0;
+            border: none;
+            background-color: $top-clr;
+            padding: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 10px;
         }
     }
 }
