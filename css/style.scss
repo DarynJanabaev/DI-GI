@@ -3,6 +3,7 @@
 
 $top-clr:#2B4074;
 $txt-clr: #4a4a4a;
+$bg-clr: #F9F6E5;
 
 html{
     box-sizing: border-box;
@@ -119,8 +120,39 @@ body{
     min-height: 193px;
 }
 
+@media (min-width: 640px){
+    .head{
+        min-height: 386px;
+    }
+}
+
+@media (min-width: 768px){
+    .head{
+        min-height: 465px;
+    }
+}
+
+@media (min-width: 1024px){
+    .head{
+        min-height: 618px;
+    }
+}
+
+@media (min-width: 1440px){
+    .head{
+        min-height: 668px;
+    }
+}
+
+
 .sliders{
     background: rgba(33, 33, 33, 0.5);
+    &__btn{
+        display: none;
+    }
+    &__description{
+        display: none;
+    }
     &__item{
         color: #fff;
         text-align: center;
@@ -173,3 +205,131 @@ body{
         }
     }
 }
+
+@media (min-width: 640px){
+    .sliders{
+        &__item{
+            min-height: 386px;
+        }
+        &__title{
+            font-size: 60px;
+            line-height: 60px;
+            padding: 50px 0 15px;
+            margin: 0 auto 30px;
+            max-width: 522px;
+        }
+        &__btn{
+            display: block;
+            margin: 0 auto 113px;
+            font-size: 18px;
+            line-height: 18px;
+            background-color: $top-clr;
+            color: $bg-clr;
+            padding: 15px 46px;
+            border: none;
+            border-radius: 3px;
+            font-family: 'roboto condensed';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 300;
+            
+        }
+        .slick-dots{
+            bottom: 50px;
+            button{
+                width: 20px;
+                height: 20px;
+                margin: 0 20px;
+            }
+        }
+        .slick-arrow{
+            width: 56px;
+            height: 56px;
+            border: none;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+        }
+        .slick-prev{
+            background-color: $top-clr;
+            top: calc(50% - 56px);
+        }
+        .slick-next{
+            background-color: $bg-clr;
+            bottom: calc(50% - 56px);
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .sliders{
+        &__item{
+            min-height: 465px;
+        }
+        &__title{
+            padding: 85px 0 15px;
+            margin: 0 auto;
+            &::after{
+                display: none;
+            }
+        }
+        &__description{
+            display: block;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            padding: 23px 0 32px;
+            max-width: 587px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .sliders{
+        &__item{
+            min-height: 618px;
+        }
+        &__title{
+            padding: 85px 0 15px;
+            line-height: 84px;
+            font-size: 84px;
+            letter-spacing: 2px;
+            max-width: 750px;
+        }
+        &__btn{
+            margin: 38px auto auto;
+            padding: 20px 60px;
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &__description{
+            font-size: 22px;
+            line-height: 22px;
+            max-width: 800px;
+        }
+    }
+} 
+
+@media (min-width: 1440px){
+    .sliders{
+        &__item{
+            min-height: 668px;
+        }
+        &__title{
+            padding: 107px 0 15px;
+            line-height: 96px;
+            font-size: 96px;
+            letter-spacing: 2px;
+            max-width: 750px;
+        }
+        &__description{
+            font-size: 28px;
+            line-height: 28px;
+            max-width: 1000px;
+        }
+    }
+} 
