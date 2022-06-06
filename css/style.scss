@@ -333,3 +333,112 @@ body{
         }
     }
 } 
+
+.call{
+    background-color: $top_clr;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &__description{
+        font-family: 'dosis';
+        font-weight: 300;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    &__btn{
+        padding: 16px 15px;
+        background-color: $bg-clr;
+        border: none;
+        border-radius: 3px;
+        font-weight: 500;
+        color: $top-clr;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 640px){
+    .call{
+        padding: 60px 0;
+        &__title{
+            font-size: 26px;
+        }
+        &__description{
+            font-size: 18px;
+            line-height: 18px;
+            max-width: 400px;
+            margin: 0 auto 40px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .call{
+        text-align: left;
+        &__title{
+            font-size: 28px;
+        }
+        
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__box{
+            max-width: 500px;
+        }
+        &__description{
+            font-size: 22px;
+            line-height: 20px;
+            margin: 0;
+            max-width: none;
+        }
+        &__btn{
+            padding: 18px 16px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .call{
+        &__title{
+            font-size: 32px;
+            line-height: 28px;
+        }
+        &__box{
+            max-width: 700px;
+        }
+        &__btn{
+            padding: 22px 20px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .call{
+        &__title{
+            font-size: 36px;
+            line-height: 30px;
+        }
+        &__box{
+            max-width: 900px;
+        }
+        &__description{
+            font-size: 26px;
+            line-height: 24px;
+            margin: 0;
+        }
+        &__btn{
+            padding: 28px 24px;
+            font-size: 28px;
+        }
+    }
+}

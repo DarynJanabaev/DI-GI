@@ -325,3 +325,116 @@ body {
     max-width: 1000px;
   }
 }
+
+.call {
+  background-color: #2B4074;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.call__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.call__description {
+  font-family: 'dosis';
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.call__btn {
+  padding: 16px 15px;
+  background-color: #F9F6E5;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  color: #2B4074;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .call {
+    padding: 60px 0;
+  }
+  .call__title {
+    font-size: 26px;
+  }
+  .call__description {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .call {
+    text-align: left;
+  }
+  .call__title {
+    font-size: 28px;
+  }
+  .call__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call__box {
+    max-width: 500px;
+  }
+  .call__description {
+    font-size: 22px;
+    line-height: 20px;
+    margin: 0;
+    max-width: none;
+  }
+  .call__btn {
+    padding: 18px 16px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .call__title {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  .call__box {
+    max-width: 700px;
+  }
+  .call__btn {
+    padding: 22px 20px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call__title {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .call__box {
+    max-width: 900px;
+  }
+  .call__description {
+    font-size: 26px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .call__btn {
+    padding: 28px 24px;
+    font-size: 28px;
+  }
+}
